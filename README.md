@@ -31,7 +31,7 @@ You can supply these as command line arguments or interactively.
 To pass these locations as command line arguments, use the syntax
 ``python agenda_compiler.py "<path to agenda pdf>" "<path to folder containing attachments>"``
 To pass the locations interactively, simply run 
-``python agenda_compiler``
+``python agenda_compiler.py``
 and follow the prompts. Note that you do *not* need to surround paths in quotes when entering them interactively.
 
 The tool will give feedback on progress through the compilation process, and will output a file called ``agenda-compiled.pdf`` once the compilation is complete. The file will also have bookmarks added pointing to the agenda and each of the attachment files within the compiled PDF document.
