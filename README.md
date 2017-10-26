@@ -1,7 +1,10 @@
 # agenda-compiler
 A tool to label all attachments for an agenda and compile them together into a single master PDF document.
 
-## Getting started on Windows for new users 
+## Getting started on Windows for new users
+### Downloading this tool
+If you're not familiar with git, then you can download this package as a zipfile. Click the 'Clone or download' button next to the file list above, and download everything as a zip. Make sure to extract everything from this zip file before proceeding. Pay attention to where you have extracted the contents to, as you will need to navigate to that location later in order to run the tool with Python.
+
 ### Python
 Make sure you have [Python 3](https://www.python.org/downloads/) installed. You don't need to be an admin user on your computer to do this, just de-select the "install for all users" option in the installation dialogue. I strongly recommend also selecting the "Add Python 3.X to PATH" option, if this is your first time with Python.
 
