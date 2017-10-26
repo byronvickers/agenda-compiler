@@ -48,6 +48,7 @@ def main(base_fname, attachment_dir, output_fname):
 
     input_base = PdfFileReader(open(base_fname, "rb"))
     bookmarks_to_add.update({page_acc:"Agenda"})
+    page_acc += len(input_base.pages)
     for page in input_base.pages:
         output.addPage(page)
 
@@ -60,8 +61,8 @@ def main(base_fname, attachment_dir, output_fname):
 
     for attch_no, attachment in enumerate(attachments):
         input_attch = PdfFileReader(open(path.join(attachment_dir,attachment), "rb"))
-        page_acc += len(input_attch.pages)
         bookmarks_to_add.update({page_acc:"ATTACHMENT {}".format(attch_no+1)})
+        page_acc += len(input_attch.pages)
         print(attachment)
         for i, page in enumerate(input_attch.pages):
             # update watermark on every page in case size/rotation has changed
